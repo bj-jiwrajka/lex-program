@@ -1,6 +1,9 @@
 #include <stdio.h>
 int main()
 {
-    printf("Hello World");
+    // ths is comment
+    printf("Hello Bijay");
+    // my name
+    /*ignore me */
     return 0;
 }

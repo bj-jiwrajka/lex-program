@@ -8,7 +8,7 @@ int i;
 
 %%
 
-"main"|"int"|"scanf"|"printf"|"if"|"else" {
+"main"|"int"|"printf"|"if"|"else"|"return"|"#include" {
     for(i = 0; i < yyleng; i++)
         fprintf(yyout, "%c", toupper(yytext[i]));
 }
