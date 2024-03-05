@@ -27,7 +27,7 @@ int main(int argc, char *argv[]) {
     FILE *input_file = fopen(argv[1], "r");
     if (!input_file) {
         perror("Error opening input file");
-        return 1;
+        return 1;   
     }
 
     FILE *output_file = fopen(argv[2], "w");
