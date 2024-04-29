@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int palindrome_count = 0;
+int cnt = 0;
 
 int is_palindrome(char *str) {
   int len = strlen(str);
@@ -19,7 +19,7 @@ int is_palindrome(char *str) {
 
 [a-zA-Z]+ {
   if (is_palindrome(yytext)) {
-    palindrome_count++;
+    cnt++;
   }
 }
 
@@ -31,6 +31,6 @@ int is_palindrome(char *str) {
 
 int main() {
   yylex();
-  printf("Number of palindromes: %d\n", palindrome_count);
+  printf("Number of palindromes: %d\n", cnt);
   return 0;
 }
